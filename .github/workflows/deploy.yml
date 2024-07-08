@@ -14,13 +14,13 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3 # به‌روزرسانی به v3
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3 # به‌روزرسانی به v3
         with:
           node-version: "20" # استفاده از نسخه 20
 
       - name: Install dependencies
-        run: npm install # به جای استفاده از اکشن، دستور npm install را مستقیماً اجرا کنید
+        run: npm ci # استفاده از npm ci برای نصب وابستگی‌ها
 
       - name: Build project
         run: npm run build
