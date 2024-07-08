@@ -7,6 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "react-router-dom": "react-router-dom",
+      aos: "aos", // اضافه کردن alias برای aos
     },
   },
 });
