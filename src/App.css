@@ -3,7 +3,7 @@
 @tailwind utilities;
 @font-face {
   font-family: iranSans;
-  src: url(.//assets/fonts/Iranian\ Sans.ttf);
+  src: url("./assets/fonts/Iranian\ Sans.ttf");
 }
 * {
   font-family: iranSans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
