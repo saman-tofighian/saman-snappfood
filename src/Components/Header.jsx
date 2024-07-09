@@ -84,7 +84,7 @@ function HeaderLinks() {
           </li>
         ))}
       </ul>
-      <div className="flex xl:hidden w-full items-center justify-end pl-8">
+      <div className="flex xl:hidden w-full items-center justify-end px-8">
         <span className="cursor-pointer" onClick={OpenList}>
           <HiBars3 size="2.2rem" />
         </span>
