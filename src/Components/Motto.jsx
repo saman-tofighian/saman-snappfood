@@ -1,23 +1,6 @@
-import { useEffect } from "react";
-import gsap from "gsap";
 import { useTranslation } from "react-i18next";
 
 const Motto = () => {
-  useEffect(() => {
-    const _moto = document.getElementById("moto");
-    const _text = document.getElementById("text");
-    gsap.to(_moto, {
-      x: 0,
-      duration: 2.5,
-      ease: "sine.out",
-    });
-    gsap.to(_text, {
-      x: 0,
-      duration: 2.5,
-      ease: "sine.out",
-    });
-  }, []);
-
   return (
     <section className="w-full mt-[6rem] lg:h-[421px]">
       <div className="flex flex-wrap items-center w-full h-full">
@@ -32,7 +15,7 @@ const MottoText = () => {
   const { t } = useTranslation();
   return (
     <div
-      className="h-full w-full lg:w-[50%] py-[32px] px-[6%] flex flex-wrap flex-col justify-center bg-[#ff00a6] translate-x-[1000px]"
+      className="h-full w-full lg:w-[50%] py-[32px] px-[6%] flex flex-wrap flex-col justify-center bg-[#ff00a6]"
       id="text"
     >
       <h1 className="text-white mb-[16px] text-[22px] lg:text-[29px] xl:text-[38px] text-center lg:text-right">
@@ -52,10 +35,7 @@ const MottoText = () => {
 
 const MottoImage = () => {
   return (
-    <figure
-      className="h-full w-full lg:w-[50%] translate-x-[-1000px]"
-      id="moto"
-    >
+    <figure className="h-full w-full lg:w-[50%]" id="moto">
       <img
         className="object-cover w-full h-full max-h-[421px]"
         src="https://web-cdn.snapp.ir/snappir-marketing/images/food/sec1food.webp"
