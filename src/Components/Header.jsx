@@ -134,7 +134,7 @@ function Language() {
   };
 
   return (
-    <div className="w-1/5 h-full  flex justify-center items-center">
+    <div className="w-[26%] h-full  flex justify-center items-center px-6">
       <select
         value={locale}
         onChange={onChangeLocale}
