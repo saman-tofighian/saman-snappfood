@@ -125,7 +125,9 @@ function MoreFoodsItems() {
             loading="lazy"
             className="rounded-[9px] mb-[16px] h-[70px] w-[auto]"
           />
-          <strong className="text-center text-[17px]">{val.Name}</strong>
+          <strong className="text-center text-[12px] md:text-[15px] lg:text-[17px]">
+            {val.Name}
+          </strong>
         </Link>
       ))}
     </div>
