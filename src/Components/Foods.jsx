@@ -196,7 +196,7 @@ function FoodItems() {
             title={val.name}
           >
             <img
-              className="rounded-[9px] mb-[16px] w-[170px] h-[90px]"
+              className="rounded-[9px] mb-[16px] w-[170px] h-[90px] object-cover"
               src={val.image}
               alt={val.alt}
               loading="lazy"
